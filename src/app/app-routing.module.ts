@@ -12,7 +12,7 @@ import { FormComponent } from './component/form/form.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'productos', component: ProductosComponent },
-  { path: 'contacto', component: ContactoComponent },
+  { path: 'contacto', component: FormComponent },
   { path: 'form', component: FormComponent },
   { path: 'libro/:id', component: LibroComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }

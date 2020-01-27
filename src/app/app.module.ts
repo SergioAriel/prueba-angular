@@ -12,6 +12,8 @@ import { ContactoComponent } from './component/contacto/contacto.component';
 import { HomeComponent } from './component/home/home.component';
 import { LibroComponent } from './component/libro/libro.component';
 import { FormComponent } from './component/form/form.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { FormComponent } from './component/form/form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
   ],

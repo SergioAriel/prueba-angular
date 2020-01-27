@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <h1>Formulario</h1>
+        <form action="enviarMail" method="post">
+            <label for="asunto">Ingrese e asunto:</label>
+            <input type="text" name="asunto" size="50"><br>
+            <label for="mensaje">Ingrese el mensaje:</label>
+            <textarea name="mensaje" rows="4" cols="50"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="rounded border border-primary bg-secondary m-2 p-2">
+            <a href="/"><strong  class="text-white">Volver al comienzo</strong></a>
+        </div>
+    </div>
+  </body>
+</html>

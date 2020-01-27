@@ -3,7 +3,7 @@ import { ServicesService } from '../../services/services.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, Validators } from '@angular/forms'
-
+import { MailService } from "../../mail.service"
 
 @Component({
   selector: 'app-form',
@@ -13,7 +13,7 @@ import { FormBuilder, Validators } from '@angular/forms'
 export class FormComponent implements OnInit {
   myForm;
 
-  constructor(public fb: FormBuilder) {
+  constructor(public fb: FormBuilder, public mail: MailService) {
     this.myForm = this.fb.group({
       nombre: ["", [Validators.required]],
       apellido: ["", [Validators.required]],
@@ -21,7 +21,9 @@ export class FormComponent implements OnInit {
     })
   }
   registrarse() {
-    console.log(this.myForm.value)
+    this.mail.save(this.myForm.value).subscribe(data => {
+      console.log(data)
+    })
   }
   ngOnInit() { }
 }
