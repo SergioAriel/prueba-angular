@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.navbarclass {
+    border-color: black;
+    background-color: rgb(168, 66, 66);
+    z-index: 1;
+}
+.bpage{
+    background-image: url("./assets/biblioteca.jpeg");
+}
+.content{
+
+    background-color: rgb(218, 216, 216);
+}

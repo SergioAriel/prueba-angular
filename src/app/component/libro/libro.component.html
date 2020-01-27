@@ -1,0 +1,11 @@
+<div > 
+<div class="card col-6 pt-3"  >
+  <img src="{{ libro.img }}" class="card-img-top" alt="book-old">
+  <div class="card-body">
+    <h5 class="card-title">{{ libro.nombre }}</h5>
+    <p> {{libro.resumen}}
+    </p>
+    <button type="button" [routerLink]="['/form', i]" class="btn btn-outline-primary btn-block col-4">Comprar</button>
+  </div>
+</div>
+</div >
